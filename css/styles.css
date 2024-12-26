@@ -1,1 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover-color: #45a049;
+    --text-color: white;
+    --bg-color: #f0f0f0;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+button:focus {
+    outline: 3px solid #80c080;
+    outline-offset: 2px;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+    margin: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
