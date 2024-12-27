@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>コンボクリエイターver.1.1</title>
-     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>コンボクリエイターver.1.2</h1>
-    </header>
-    <main>
-        <section class="button-group">
-            <!-- 各方向のボタン -->
-        <button data-image="images/7.png">↖</button>
+    <div>
+	<button data-image="images/7.png">↖</button>
 	<button data-image="images/8.png">↑</button>
 	<button data-image="images/9.png">↗</button>
 	<button data-image="images/zp.png">弱P</button>
@@ -48,19 +43,10 @@
         <button id="newLineBtn" class="button">改行</button>
         <button id="addTextBoxBtn" class="button">テキストボックス追加</button>
         <button id="removeLastBtn" class="button">1つ削除</button>
-            <button onclick="mergeImages()">画像をまとめる</button>
-        </section>
+	
+    </div>
+    <div class="image-container"></div>
 
-        <section class="image-container">
-            <!-- 画像が動的に追加される領域 -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 コンボクリエイター</p>
-    </footer>
-
-    <script src="script.js"><js/script>
+<script src="script.js"><script>
 </body>
 </html>
-
